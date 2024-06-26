@@ -1,0 +1,59 @@
+---
+ import Section from "@/components/Section.astro";
+
+ import { education } from '@/cv'
+---
+<Section title="Education"> 
+    <ul>
+        { education.map(ed => (
+            <li>
+                <article>
+                    <header>
+                    <h3>
+                        • { ed.institution } <span class="ed-area"> ( { ed.area } )</span> 
+                    </h3>
+                    <span>
+                        {ed.startDate} - {ed.endDate}
+                    </span>
+                    </header>
+                </article>
+            </li>
+        ))}
+    </ul>
+</Section>
+
+
+
+<style>
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    h3{
+        font-size: 14.4px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .ed-area, header span{
+        color: #fafafa;
+        font-size: 12px;
+    }
+
+    @media print {
+        .ed-area, header span {
+            color: #555
+        }
+    }
+</style>

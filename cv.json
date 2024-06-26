@@ -1,0 +1,306 @@
+{
+    "basics": {
+      "name": "Facundo Meoni",
+      "label": "Fullstack developer",
+      "image": "",
+      "email": "meonifacu@gmail.com",
+      "phone": "(+54) 236-4414166",
+      "url": "https://facu-dev.com",
+      "summary": "+2 years of experience in web development, I'm Fullstack developer with solid knowledge in JavaScript, HTML, CSS, TailwindCSS, React, Astro, NextJS, Redux, NodeJS, Express, SQL, MySQL, Sequelize, Docker, Git and Github. Proactive person, with a strong desire to learn and grow in the IT industry.", 
+      "location": {
+        "address": "Ricardo Rojas 637",
+        "postalCode": "6000",
+        "city": "Junin",
+        "countryCode": "ARG",
+        "country": "Argentina"
+      },
+      "profiles": [{
+        "network": "Github",
+        "username": "FacuMeoni",
+        "url": "https://github.com/FacuMeoni"
+      },
+     {
+        "network": "LinkedIn",
+        "username": "Facundo Meoni",
+        "url": "https://www.linkedin.com/in/facundo-meoni-fullstack/"
+      }]
+    },
+    "education": [{
+      "institution": "Unnoba",
+      "url": "https://unnoba.edu.ar/",
+      "area": "Bachelor's degree in systems",
+      "studyType": "Bachelor",
+      "startDate": "2021",
+      "endDate": "Abandoned",
+      "score": "x",
+      "courses": [
+        "c++",
+        "Phyton",
+        "Algorithms"
+      ]
+    },
+    {
+        "institution": "Henry's bootcamp",
+        "area": "Fullstack developer",
+        "studyType": "Bootcamp",
+        "startDate": "2023/02",
+        "endDate": "2023/08",
+        "score": "x",
+        "courses": [
+          "React",
+          "HTML5",
+          "JavaScript",
+          "CSS",
+          "Node.js",
+          "SQL",
+          "MySQL",
+          "Express",
+          "Sequelize",
+          "Algorithms",
+          "Redux"
+        ]
+      }],
+    "certificates": [{
+      "name": "Henry's certificate",
+      "date": "2023-08-05",
+      "issuer": "Henry",
+      "url": "https://certificates.soyhenry.com/new-cert?id=3f3d03b867b12bc3f1912a7e764c40adcf4ba49b76ff449e28fd89738909f1bd"
+    }],
+    "skills": [
+      {
+        "name": "HTML",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Frontend"
+      ]},
+      {
+        "name": "CSS",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "responsive design"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "Backend",
+          "Fullstack"
+        ]
+      },
+      {
+        "name": "TailwindCSS",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "Responsive design",
+          "Css framework"
+      ]
+      },
+      {
+        "name": "React.js",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "Responsive design"
+      ]
+      },
+      {
+        "name": "Astro.js",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "Responsive design"
+      ]
+      },
+      {
+        "name": "Next.js",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "Responsive design"
+      ]
+      },
+      {
+        "name": "Redux",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Frontend"
+      ]
+      },
+      {
+        "name": "Node.js",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "Express",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      { 
+        "name": "SQL",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Database management"
+      ]
+      },
+      {
+        "name": "MySQL",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "Sequelize",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "Docker",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "Git",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "Github",
+        "level": "Master",
+        "keywords": [
+          "Web development"
+      ]
+      },
+      {
+        "name": "English",
+        "level": "Master",
+        "keywords": [
+          "Web development"
+      ]
+      },
+      {
+        "name": "Portuguese",
+        "level": "Master",
+        "keywords": [
+          "Web development"
+      ]
+      },{
+        "name": "Front-end",
+        "level": "Master",
+        "keywords": [
+          "Web development"
+      ]
+      },
+      {
+        "name": "Back-end",
+        "level": "Master",
+        "keywords": [
+          "Web development"
+      ]
+      },{
+        "name": "Web design",
+        "level": "Master",
+        "keywords": [
+          "Web development"
+      ]
+      },
+      {
+        "name": "Bootstrap",
+        "level": "Master",
+        "keywords": [
+          "Web development"
+      ]
+      }],
+    "languages": [
+      {
+        "language": "Spanish",
+        "fluency": "Native"
+      },
+      {
+        "language": "Portuguese",
+        "fluency": "Basic"
+      },
+      {
+      "language": "English",
+      "fluency": "C1 - advanced"
+    }],
+    "interests": [{
+      "name": "Video Games",
+      "keywords": [
+        "Counter Strike",
+        "GTA"
+      ]
+    }],
+    "projects": [{
+      "name": "Alohar",     
+      "isActive" : true,
+      "description": "App designed to help users find and rent their dream place in South America. It also provides the opportunity to become a host and earn money through the app.",
+      "url": "https://pf-grupo12-xi.vercel.app/#/",
+      "github": "https://github.com/NahueSanz/pf-grupo12",
+      "skills": [
+        "Vite",
+        "Redux",
+        "Node.js",
+        "Express",
+        "Sequelize",
+        "MySQL",
+        "CSS",
+        "Firebase",
+        "Bootstrap 5",
+        "nodemailer",
+        "Team work"
+        ]
+    },{
+        "name": "Breeds",
+        "isActive" : false,
+        "description": "Allows you to search for dog breed, sort them by temperament, gender, weight, and even upload any breed that isn't included!",
+        "github": "https://github.com/FacuMeoni/PI_henry_2",
+        "skills": [
+          "React",
+          "Redux",
+          "Node.js",
+          "Express",
+          "Sequelize",
+          "MySQL",
+          "CSS"
+         ]
+      }
+]
+  }

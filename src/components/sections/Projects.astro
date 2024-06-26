@@ -1,0 +1,115 @@
+---
+ import Section from "@/components/Section.astro";
+
+ import { projects } from "@/cv"
+ import Github from "@/icons/Github.astro";
+---
+
+<Section title="Projects"> 
+  <ul>
+    { projects.map(({name, isActive, description, url, github, skills}) => {
+      return (
+      <li>
+        <article>
+          <header>
+            <h3>
+              <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={`See project ${name}`}
+              >{ name }</a> 
+              { !isActive ? <span style="font-size: 14px;">- Archived </span> : null }
+            </h3>
+            <a 
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={`See project ${name} on Github`}
+              > <Github/> </a>
+          </header>
+            <p> { description } </p>
+          <footer>
+            <ul class="skills-list">
+               { skills.map(skill => (
+                  <li class="skills">{ skill }</li>
+               ))}
+            </ul>
+          </footer>
+        </article>
+      </li>
+      )
+    })}
+  </ul>
+</Section>
+
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+  }
+  header a {
+    color: inherit;
+  }
+
+  h3 {
+    font-size: 14.4px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+  }
+  
+  h3 a {
+    color: inherit;
+  }
+
+  .skills-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .skills {
+        color: #fff;
+        border-radius: 6px;
+        background-color: #1b1b1b;
+        font-weight: 400;
+        padding: 4px 8px;
+        font-size: 12px;
+        box-shadow: 0 0 0 1px transparent;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    @media print {
+        .skills {
+            color: #fff;
+            background-color: #000;
+        }
+        .skills span {
+            color: #fff
+        }
+        header {
+          color: #000;
+        }
+    }
+  
+</style>

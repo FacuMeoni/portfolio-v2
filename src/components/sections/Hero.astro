@@ -1,0 +1,169 @@
+---
+import { basics } from '@/cv'
+import Section from '@/components/Section.astro'
+import Mail from '@/icons/Mail.astro'
+import Phone from '@/icons/Phone.astro'
+import Github from '@/icons/Github.astro'
+import LinkedIn from '@/icons/LinkedIn.astro'
+
+
+const { name, label, location, email, phone, profiles} = basics
+const { city, country } = location 
+
+const SOCIAL_ICONS ={ Github, LinkedIn }
+const linkedInInfo = profiles.find(profile => profile.network === 'LinkedIn')
+---
+
+
+<Section>
+  <div class="container">
+    <header class="print">
+      <h1>{ name } </h1>
+    </header>
+    <header class="no-print">
+      <h1>  Hi, I'm { name } 👋</h1>
+      <nav>
+        {
+          email && (
+            <a 
+            href={`mailto:${email}`}
+            title={`Send an email to ${name} at ${email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+              <Mail />
+            </a>
+          )
+        }
+        {
+              phone && (
+                  <a 
+                  href={`tel:${phone}`}
+                  title={`Phone call to ${name} at number ${phone}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  <Phone />
+                  </a>
+              )
+        }
+        {
+            profiles && profiles.map(profile => {
+              const Icon = SOCIAL_ICONS[profile.network]
+              
+              return(
+                <a 
+                href={profile.url} 
+                title={`Visit ${name} profile at ${profile.network}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                  <Icon />
+                </a>
+              )
+              })
+        }
+      </nav>
+    </header>
+    <footer>
+      <a
+      href="https://maps.app.goo.gl/3rovhvS1wywP9kKr8"
+      title=`Explore my beautiful city ${city}`
+      target="_blank"
+      rel="noopener noreferrer"
+      class="location">
+          From { city }, { country }.
+      </a>
+      <div class="print contact">
+          <span>
+              <Mail /> { email }
+          </span>
+          <span>
+              <Phone /> { phone }
+          </span>
+          <span>
+              <LinkedIn /> { linkedInInfo?.url }
+          </span>
+      </div>
+    </footer>
+  </div>
+</Section>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .location {
+      display: inline-flex;
+      align-items: center;
+      color: #888;
+      gap: 4px;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: -0.05rem;
+      transition: all 0.3s ease;
+   }
+
+  .location:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  h1 {
+  font-size: 24px;
+  }
+
+  nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+  }
+
+  nav a {
+    border-radius: 6px;
+    color: #f4f4f4;
+    transition-property: background-color, box-shadow, color;
+    transition-duration: .15s;
+    transition-timing-function: ease; 
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+  }
+
+  nav a:hover {
+    color: #fff;
+    background-color: #111;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0;
+  }
+
+  .contact span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  @media print {
+    .location {
+        color: #222;
+    }
+  }
+</style> 
