@@ -38,28 +38,7 @@
         "Phyton",
         "Algorithms"
       ]
-    },
-    {
-        "institution": "Henry's bootcamp",
-        "area": "Fullstack developer",
-        "studyType": "Bootcamp",
-        "startDate": "2023/02",
-        "endDate": "2023/08",
-        "score": "x",
-        "courses": [
-          "React",
-          "HTML5",
-          "JavaScript",
-          "CSS",
-          "Node.js",
-          "SQL",
-          "MySQL",
-          "Express",
-          "Sequelize",
-          "Algorithms",
-          "Redux"
-        ]
-      }],
+    }],
     "certificates": [{
       "name": "Henry's certificate",
       "date": "2023-08-05",
@@ -175,6 +154,15 @@
       ]
       },
       {
+        "name": "PostgreSQL",
+        "level": "Master",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
         "name": "Sequelize",
         "level": "Master",
         "keywords": [
@@ -209,39 +197,6 @@
       ]
       },
       {
-        "name": "English",
-        "level": "Master",
-        "keywords": [
-          "Web development"
-      ]
-      },
-      {
-        "name": "Portuguese",
-        "level": "Master",
-        "keywords": [
-          "Web development"
-      ]
-      },{
-        "name": "Front-end",
-        "level": "Master",
-        "keywords": [
-          "Web development"
-      ]
-      },
-      {
-        "name": "Back-end",
-        "level": "Master",
-        "keywords": [
-          "Web development"
-      ]
-      },{
-        "name": "Web design",
-        "level": "Master",
-        "keywords": [
-          "Web development"
-      ]
-      },
-      {
         "name": "Bootstrap",
         "level": "Master",
         "keywords": [
@@ -269,37 +224,20 @@
       ]
     }],
     "projects": [{
-      "name": "Alohar",     
-      "isActive" : true,
-      "description": "App designed to help users find and rent their dream place in South America. It also provides the opportunity to become a host and earn money through the app.",
-      "url": "https://pf-grupo12-xi.vercel.app/#/",
-      "github": "https://github.com/NahueSanz/pf-grupo12",
-      "skills": [
-        "Vite",
-        "Redux",
-        "Node.js",
-        "Express",
-        "Sequelize",
-        "MySQL",
-        "CSS",
-        "Firebase",
-        "Bootstrap 5",
-        "nodemailer",
-        "Team work"
-        ]
-    },{
-        "name": "Breeds",
-        "isActive" : false,
-        "description": "Allows you to search for dog breed, sort them by temperament, gender, weight, and even upload any breed that isn't included!",
-        "github": "https://github.com/FacuMeoni/PI_henry_2",
+        "name": "Rick and Morty",
+        "isActive" : true,
+        "url": "https://rickandmorty-gg.vercel.app/",
+        "description": "My first full-stack project, where I developed an SQL database and an API using Express and Sequelize. On the frontend, I designed a user-friendly and intuitive interface with React.js, focusing on functionality and seamless user experience.",
+        "github": "https://github.com/FacuMeoni/rick_and_morty.git",
         "skills": [
           "React",
-          "Redux",
+          "JavaScript",
           "Node.js",
           "Express",
           "Sequelize",
-          "MySQL",
-          "CSS"
+          "PostgreSQL",
+          "CSS",
+          "HTML"
          ]
       }
 ]
