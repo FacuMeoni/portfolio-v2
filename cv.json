@@ -92,6 +92,28 @@
       ]
       },
       {
+        "name": "Java",
+        "level": "Intermediate",
+        "keywords": [
+          "Object-oriented programming",
+          "Console applications",
+          "Basic algorithms",
+          "CRUD systems",
+          "Spring Boot (introductory)"
+        ]
+      },
+      {
+        "name": ".NET",
+        "level": "Beginner",
+        "keywords": [
+          "C# fundamentals",
+          "Console applications",
+          "Object-oriented programming",
+          "Basic LINQ",
+          "Entity Framework (introductory)"
+        ]
+      },
+      {
         "name": "Astro.js",
         "level": "Master",
         "keywords": [
@@ -116,6 +138,17 @@
           "Web development",
           "Frontend"
       ]
+      },
+      {
+        "name": "AWS",
+        "level": "Beginner",
+        "keywords": [
+          "Cloud concepts",
+          "EC2 (intro)",
+          "S3 (intro)",
+          "Infrastructure basics",
+          "Cloud deployment (planned learning)"
+        ]
       },
       {
         "name": "Node.js",
@@ -239,6 +272,69 @@
           "CSS",
           "HTML"
          ]
+      },
+      {
+        "name": "Contact Manager - Java Console App",
+        "isActive": false,
+        "description": "A console-based CRUD application developed in Java, allowing users to create, view, update, and delete contacts. This project helped me apply object-oriented principles and data structure management.",
+        "github": "",
+        "skills": [
+          "Java",
+          "OOP",
+          "Data structures",
+          "Algorithms",
+          "Console application"
+        ]
+      },
+      {
+        "name": "Task Tracker - .NET Console App",
+        "isActive": false,
+        "description": "A task management system built with C# using .NET, featuring basic task creation, updates, and filtering. It reinforced my understanding of .NET structure, LINQ, and object-oriented development.",
+        "github": "",
+        "skills": [
+          "C#",
+          ".NET",
+          "LINQ",
+          "OOP",
+          "Console application"
+        ]
+      }, {
+        "name": "AWS Project Deployment (Simulated)",
+        "isActive": false,
+        "description": "A documented simulation of deploying a basic static web app using AWS services like EC2 and S3. The project includes infrastructure planning and theoretical deployment steps as part of my AWS learning path.",
+        "github": "",
+        "skills": [
+          "AWS",
+          "EC2",
+          "S3",
+          "Cloud deployment",
+          "Infrastructure as code (theoretical)"
+        ]
+      },
+      {
+        "name": "Ethics",
+        "isActive": true,
+        "url": "https://ethics.ar/",
+        "description": "Online store customized using Tienda Nube’s platform. I managed product uploads, basic design personalization, integrations, and assisted with configuration and setup for launch.",
+        "github": "",
+        "skills": [
+          "Tienda Nube"
+        ]
+      },
+      {
+        "name": "Caggianos Carnes - Landing Page",
+        "isActive": false,
+        "url": "",
+        "description": "Landing page for a local meat distributor, focused on showcasing brand identity, service highlights, and contact form. Built with React, Vite and TailwindCSS.",
+        "github": "https://github.com/FacuMeoni/caggianos-carnes",
+        "skills": [
+          "React",
+          "TailwindCSS",
+          "JavaScript",
+          "Landing page",
+          "Vite",
+          "Client-oriented design"
+        ]
       }
-]
+    ]
   }
