@@ -54,6 +54,18 @@
           "Frontend"
       ]},
       {
+        "name": "C#",
+        "level": "Beginner",
+        "keywords": [
+          "Object-oriented programming",
+          "Console applications",
+          ".NET basics",
+          "LINQ (intro)",
+          "Class structures",
+          "Methods and control flow"
+        ]
+      },
+      {
         "name": "CSS",
         "level": "Master",
         "keywords": [
