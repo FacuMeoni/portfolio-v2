@@ -281,7 +281,7 @@
       },
       {
         "name": "Caggianos Carnes - Landing Page",
-        "isActive": false,
+        "isActive": true,
         "url": "https://www.caggianocarnes.com/es",
         "description": "Landing page for a local meat distributor, focused on showcasing brand identity, service highlights, and contact form. Built with React, Vite and TailwindCSS.",
         "github": "https://github.com/FacuMeoni/caggiano-landing/",
