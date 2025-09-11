@@ -268,7 +268,32 @@
         "GTA"
       ]
     }],
-    "projects": [{
+    "projects": [
+      {
+        "name": "Ethics",
+        "isActive": true,
+        "url": "https://ethics.ar/",
+        "description": "Online store customized using Tienda Nube’s platform. I managed product uploads, basic design personalization, integrations, and assisted with configuration and setup for launch.",
+        "github": "",
+        "skills": [
+          "Tienda Nube"
+        ]
+      },
+      {
+        "name": "Caggianos Carnes - Landing Page",
+        "isActive": false,
+        "url": "https://www.caggianocarnes.com/es",
+        "description": "Landing page for a local meat distributor, focused on showcasing brand identity, service highlights, and contact form. Built with React, Vite and TailwindCSS.",
+        "github": "https://github.com/FacuMeoni/caggiano-landing/",
+        "skills": [
+          "React",
+          "TailwindCSS",
+          "JavaScript",
+          "Landing page",
+          "Vite",
+          "Client-oriented design"
+        ]
+      }, {
         "name": "Rick and Morty",
         "isActive" : true,
         "url": "https://rickandmorty-gg.vercel.app/",
@@ -321,31 +346,6 @@
           "S3",
           "Cloud deployment",
           "Infrastructure as code (theoretical)"
-        ]
-      },
-      {
-        "name": "Ethics",
-        "isActive": true,
-        "url": "https://ethics.ar/",
-        "description": "Online store customized using Tienda Nube’s platform. I managed product uploads, basic design personalization, integrations, and assisted with configuration and setup for launch.",
-        "github": "",
-        "skills": [
-          "Tienda Nube"
-        ]
-      },
-      {
-        "name": "Caggianos Carnes - Landing Page",
-        "isActive": false,
-        "url": "",
-        "description": "Landing page for a local meat distributor, focused on showcasing brand identity, service highlights, and contact form. Built with React, Vite and TailwindCSS.",
-        "github": "https://github.com/FacuMeoni/caggiano-landing/",
-        "skills": [
-          "React",
-          "TailwindCSS",
-          "JavaScript",
-          "Landing page",
-          "Vite",
-          "Client-oriented design"
         ]
       }
     ]
