@@ -48,7 +48,7 @@
     "skills": [
       {
         "name": "HTML",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Frontend"
@@ -67,7 +67,7 @@
       },
       {
         "name": "CSS",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Frontend",
@@ -76,7 +76,7 @@
       },
       {
         "name": "JavaScript",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Frontend",
@@ -86,7 +86,7 @@
       },
       {
         "name": "TailwindCSS",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Frontend",
@@ -96,7 +96,7 @@
       },
       {
         "name": "React.js",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Frontend",
@@ -127,7 +127,7 @@
       },
       {
         "name": "Astro.js",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Frontend",
@@ -136,7 +136,7 @@
       },
       {
         "name": "Next.js",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Frontend",
@@ -145,7 +145,7 @@
       },
       {
         "name": "Redux",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Frontend"
@@ -164,7 +164,7 @@
       },
       {
         "name": "Node.js",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Backend",
@@ -173,7 +173,7 @@
       },
       {
         "name": "Express",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Backend",
@@ -182,7 +182,7 @@
       },
       { 
         "name": "SQL",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Backend",
@@ -191,7 +191,7 @@
       },
       {
         "name": "MySQL",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Backend",
@@ -200,7 +200,7 @@
       },
       {
         "name": "PostgreSQL",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Backend",
@@ -209,7 +209,7 @@
       },
       {
         "name": "Sequelize",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Backend",
@@ -218,7 +218,7 @@
       },
       {
         "name": "Docker",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Backend",
@@ -227,7 +227,7 @@
       },
       {
         "name": "Git",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development",
           "Backend",
@@ -236,14 +236,14 @@
       },
       {
         "name": "Github",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development"
       ]
       },
       {
         "name": "Bootstrap",
-        "level": "Master",
+        "level": "Advanced",
         "keywords": [
           "Web development"
       ]
@@ -321,6 +321,45 @@
           "Data structures",
           "Algorithms",
           "Console application"
+        ]
+      },
+      {
+        "name": "JavaFinance Tracker",
+        "isActive": false,
+        "description": "Console application for managing personal finances. Allows users to register income and expenses, calculate balances, and save data to a local file.",
+        "github": "",
+        "skills": [
+          "Java",
+          "OOP",
+          "File I/O",
+          "Data structures",
+          "Console application"
+        ]
+      },
+      {
+        "name": "PokeDex Java CLI",
+        "isActive": false,
+        "description": "Console-based Pokedex that allows searching for Pokémon, filtering them, and viewing details. Practice with OOP, collections, and basic data handling.",
+        "github": "",
+        "skills": [
+          "Java",
+          "OOP",
+          "Collections",
+          "Data structures",
+          "Console application"
+        ]
+      },
+      {
+        "name": "CV Fast (Web App)",
+        "isActive": false,
+        "description": "Web application that enables users to create their CV in less than 10 minutes using optimized templates and get AI suggestions.",
+        "github": "https://github.com/FacuMeoni/cv-fast",
+        "skills": [
+          "React",
+          "TailwindCSS",
+          "JavaScript",
+          "HTML",
+          "CSS"
         ]
       },
       {
