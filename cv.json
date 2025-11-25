@@ -324,19 +324,6 @@
         ]
       },
       {
-        "name": "JavaFinance Tracker",
-        "isActive": false,
-        "description": "Console application for managing personal finances. Allows users to register income and expenses, calculate balances, and save data to a local file.",
-        "github": "",
-        "skills": [
-          "Java",
-          "OOP",
-          "File I/O",
-          "Data structures",
-          "Console application"
-        ]
-      },
-      {
         "name": "PokeDex Java CLI",
         "isActive": false,
         "description": "Console-based Pokedex that allows searching for Pokémon, filtering them, and viewing details. Practice with OOP, collections, and basic data handling.",
