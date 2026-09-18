@@ -1,10 +1,22 @@
 ---
  import Section from "@/components/Section.astro";
 
- import { work } from "@/cv"
+interface Props {
+  work: {
+    name: string;
+    position: string;
+    startDate: string;
+    endDate: string;
+    url?: string;
+    summary: string;
+  }[];
+  title: string;
+}
+
+const { work, title } = Astro.props
 ---
 
-<Section title="Work">
+<Section title={title}>
   <div class="list">
     { work.map(({ name, position, startDate, endDate, url, summary }) => (
       <div class="item">

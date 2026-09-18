@@ -1,0 +1,352 @@
+{
+    "basics": {
+      "name": "Facundo Meoni",
+      "label": "Desarrollador",
+      "image": "",
+      "email": "meonifacu@gmail.com",
+      "phone": "(+54) 236-4414166",
+      "url": "https://facu-dev.com",
+      "summary": "23 años, desarrollador full-stack argentino y emprendedor tecnológico, actualmente construyendo productos digitales y gestionando operaciones de e-commerce a través de mi propia agencia, ElBarto. Mi trabajo está en la intersección entre la estrategia de negocio y la ingeniería de software.\n\nMe especializo en construir aplicaciones web escalables y en hacerme cargo por completo de infraestructuras técnicas. Como desarrollador AI-native, integro fuertemente herramientas como Cursor y CLIs de IA en mi flujo de trabajo diario para acelerar la resolución de problemas, optimizar estructuras de datos y entregar resultados más rápidos y de mayor calidad. Me importa profundamente el rendimiento, la automatización y los detalles que hacen que las experiencias digitales se sientan cuidadas.\n\nEn el camino, gestioné operaciones de Tiendanube de punta a punta —desde diseño web a medida hasta email marketing segmentado—, desarrollé herramientas interactivas para la escena de cultura urbana, y diseñé arquitecturas backend robustas. Mi stack principal incluye React, Next.js, Tailwind CSS, SQL, PostgreSQL y Supabase.",
+      "location": {
+        "address": "Ricardo Rojas 637",
+        "postalCode": "6000",
+        "city": "Junin",
+        "countryCode": "ARG",
+        "country": "Argentina"
+      },
+      "profiles": [{
+        "network": "Github",
+        "username": "FacuMeoni",
+        "url": "https://github.com/FacuMeoni"
+      },
+     {
+        "network": "LinkedIn",
+        "username": "Facundo Meoni",
+        "url": "https://www.linkedin.com/in/facundo-meoni-fullstack/"
+      }]
+    },
+    "work": [
+      {
+        "name": "Elbarto",
+        "position": "Fundador",
+        "startDate": "2025",
+        "endDate": "Actualidad",
+        "url": "",
+        "summary": "Fundé una agencia digital independiente para ofrecer soluciones tecnológicas de alto rendimiento a marcas modernas. Ofrecemos una suite completa de servicios que incluye desarrollo web a medida, mantenimiento integral de Tiendanube y la creación de productos digitales interactivos y aplicaciones a medida."
+      },
+      {
+        "name": "Software studio",
+        "position": "Desarrollador Fullstack",
+        "url": "https://www.softwarestudio.com.ar/",
+        "startDate": "2023",
+        "endDate": "2025",
+        "summary": "Encargado de desarrollar plataformas de e-commerce orientadas a la conversión y sistemas de gestión web. Lideré la optimización integral dentro del ecosistema Tiendanube, integrando pasarelas de pago seguras, automatización logística y chatbots de WhatsApp. Gestioné migraciones de infraestructura en la nube sobre AWS y configuré herramientas de analítica avanzada para mejorar el SEO y escalar las ventas de los clientes."
+      }
+    ],
+    "education": "Empecé la carrera de Sistemas en la UNNOBA (2021-2022) y continué mi carrera como desarrollador autodidacta. Me formé a través de distintos cursos enfocados en desarrollo web y la integración de herramientas de Inteligencia Artificial, ¡siempre con ganas de aprender y en aprendizaje continuo!",
+    "stack": [
+      {
+        "category": "IA",
+        "items": [
+          { "name": "Cursor", "description": "Editor de código con IA para el desarrollo diario.", "url": "https://cursor.sh/" },
+          { "name": "Claude", "description": "Asistente de IA que uso para programar y escribir.", "url": "https://claude.ai/" },
+          { "name": "Claude Code", "description": "CLI de programación agéntica que uso para construir y lanzar proyectos.", "url": "https://claude.com/claude-code" },
+          { "name": "Gemini", "description": "Lo uso para planificar y estructurar proyectos.", "url": "https://gemini.google.com/" },
+          { "name": "ChatGPT", "description": "Chatbot de IA para resolver problemas del día a día.", "url": "https://chatgpt.com/" },
+          { "name": "Orca", "description": "Gestiona agentes de IA de código en worktrees aislados.", "url": "" }
+        ]
+      },
+      {
+        "category": "Desarrollo",
+        "items": [
+          { "name": "TypeScript", "description": "Lenguaje principal para desarrollo con tipado seguro.", "url": "https://www.typescriptlang.org/" },
+          { "name": "Next.js", "description": "Framework de React para apps web en producción.", "url": "https://nextjs.org/" },
+          { "name": "Astro", "description": "Framework usado para construir este portfolio.", "url": "https://astro.build/" },
+          { "name": "TailwindCSS", "description": "Framework de CSS utility-first para los estilos.", "url": "https://tailwindcss.com/" },
+          { "name": "Supabase", "description": "Backend y base de datos Postgres como servicio.", "url": "https://supabase.com/" },
+          { "name": "VS Code", "description": "Editor de código principal para el desarrollo diario.", "url": "https://code.visualstudio.com/" },
+          { "name": "Warp", "description": "Terminal con IA para el desarrollo diario.", "url": "https://www.warp.dev/" }
+        ]
+      },
+      {
+        "category": "Diseño",
+        "items": [
+          { "name": "Figma", "description": "Herramienta de diseño de interfaces y prototipado.", "url": "https://figma.com/" },
+          { "name": "Adobe Photoshop", "description": "Herramienta de edición de imágenes y diseño.", "url": "https://www.adobe.com/products/photoshop.html" },
+          { "name": "Open Pencil", "description": "Herramienta de bocetado y prototipado.", "url": "" },
+          { "name": "Unpeel", "description": "Herramienta de diseño que uso en mi flujo de trabajo.", "url": "" }
+        ]
+      },
+      {
+        "category": "Productividad",
+        "items": [
+          { "name": "Obsidian", "description": "Toma de notas y gestión de conocimiento.", "url": "https://obsidian.md/" }
+        ]
+      }
+    ],
+    "certificates": [{
+      "name": "Henry's certificate",
+      "date": "2023-08-05",
+      "issuer": "Henry",
+      "url": "https://certificates.soyhenry.com/new-cert?id=3f3d03b867b12bc3f1912a7e764c40adcf4ba49b76ff449e28fd89738909f1bd"
+    }],
+    "skills": [
+      {
+        "name": "HTML",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Frontend"
+      ]},
+      {
+        "name": "C#",
+        "level": "Beginner",
+        "keywords": [
+          "Object-oriented programming",
+          "Console applications",
+          ".NET basics",
+          "LINQ (intro)",
+          "Class structures",
+          "Methods and control flow"
+        ]
+      },
+      {
+        "name": "CSS",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "responsive design"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "Backend",
+          "Fullstack"
+        ]
+      },
+      {
+        "name": "TailwindCSS",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "Responsive design",
+          "Css framework"
+      ]
+      },
+      {
+        "name": "React.js",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "Responsive design"
+      ]
+      },
+      {
+        "name": "Java",
+        "level": "Intermediate",
+        "keywords": [
+          "Object-oriented programming",
+          "Console applications",
+          "Basic algorithms",
+          "CRUD systems",
+          "Spring Boot (introductory)"
+        ]
+      },
+      {
+        "name": ".NET",
+        "level": "Beginner",
+        "keywords": [
+          "C# fundamentals",
+          "Console applications",
+          "Object-oriented programming",
+          "Basic LINQ",
+          "Entity Framework (introductory)"
+        ]
+      },
+      {
+        "name": "Astro.js",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "Responsive design"
+      ]
+      },
+      {
+        "name": "Next.js",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Frontend",
+          "Responsive design"
+      ]
+      },
+      {
+        "name": "Redux",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Frontend"
+      ]
+      },
+      {
+        "name": "AWS",
+        "level": "Beginner",
+        "keywords": [
+          "Cloud concepts",
+          "EC2 (intro)",
+          "S3 (intro)",
+          "Infrastructure basics",
+          "Cloud deployment (planned learning)"
+        ]
+      },
+      {
+        "name": "Node.js",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "Express",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "SQL",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Database management"
+      ]
+      },
+      {
+        "name": "MySQL",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "Sequelize",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "Docker",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "Git",
+        "level": "Advanced",
+        "keywords": [
+          "Web development",
+          "Backend",
+          "Fullstack"
+      ]
+      },
+      {
+        "name": "Github",
+        "level": "Advanced",
+        "keywords": [
+          "Web development"
+      ]
+      },
+      {
+        "name": "Bootstrap",
+        "level": "Advanced",
+        "keywords": [
+          "Web development"
+      ]
+      }],
+    "languages": [
+      {
+        "language": "Spanish",
+        "fluency": "Native"
+      },
+      {
+        "language": "Portuguese",
+        "fluency": "Basic"
+      },
+      {
+      "language": "English",
+      "fluency": "C1 - advanced"
+    }],
+    "interests": [{
+      "name": "Video Games",
+      "keywords": [
+        "Counter Strike",
+        "GTA"
+      ]
+    }],
+    "projects": [
+      {
+        "name": "Celestita House ID generator",
+        "isActive": true,
+        "url": "https://celestitahouse.ethics.ar/",
+        "description": "Generador de credenciales personalizadas 'Celestita House' para Ethics.",
+        "github": "https://github.com/FacuMeoni/ethics-credential"
+      },
+      {
+        "name": "Caggianos Carnes - Landing Page",
+        "isActive": true,
+        "url": "https://www.caggianocarnes.com/es",
+        "description": "Landing page para un distribuidor de carnes local.",
+        "github": "https://github.com/FacuMeoni/caggiano-landing/"
+      },
+      {
+        "name": "Juntadas App",
+        "isActive": false,
+        "url": "https://gastos-juntada-viajes.vercel.app/",
+        "description": "PWA para gestionar y dividir gastos en juntadas o viajes.",
+        "github": "https://github.com/FacuMeoni/cv-fast"
+      },
+      {
+        "name": "CVFast",
+        "isActive": false,
+        "description": "Aplicación para crear CVs con plantillas optimizadas y sugerencias con IA.",
+        "github": "https://github.com/FacuMeoni/cv-fast"
+      },
+      {
+        "name": "Ethics (Via Elbarto)",
+        "isActive": true,
+        "url": "https://ethics.ar/",
+        "description": "Gestión de Tiendanube, diseño web a medida y email marketing"
+      }
+
+    ]
+  }

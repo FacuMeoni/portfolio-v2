@@ -1,5 +1,14 @@
+---
+interface Props {
+  printHintPrefix: string;
+  printHintSuffix: string;
+}
+
+const { printHintPrefix, printHintSuffix } = Astro.props
+---
+
  <footer class="no-print">
-    Press <kbd>Ctrl</kbd> + <kbd>K</kbd> to open the command palette.
+    { printHintPrefix } <kbd>Ctrl</kbd> + <kbd>K</kbd> { printHintSuffix }
  </footer>
 
  <ninja-keys class="light no-print">
