@@ -71,14 +71,14 @@
    }
 
    footer {
-    background: #000;
-    border-top: 1px solid #222;
+    background: var(--bg);
+    border-top: 1px solid var(--border);
     position: fixed;
     bottom: 0px;
     width: 100%;
     padding-block: 8px;
     text-align: center;
-    color: #fff;
+    color: var(--text-secondary);
     font-size: 14px;
 
     view-timeline-name: --revealing;
@@ -91,9 +91,11 @@
    }
 
    kbd {
-    background-color: #222;
+    background-color: var(--bg-subtle);
+    border: 1px solid var(--border);
     border-radius: 4px;
-    padding: 2px 4px;
+    padding: 2px 6px;
+    color: var(--text-primary);
    }
  </style>
  

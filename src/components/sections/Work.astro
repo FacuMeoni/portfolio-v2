@@ -1,0 +1,100 @@
+---
+ import Section from "@/components/Section.astro";
+
+ import { work } from "@/cv"
+---
+
+<Section title="Work">
+  <div class="list">
+    { work.map(({ name, position, startDate, endDate, url, summary }) => (
+      <div class="item">
+        <div class="row">
+          <div class="title-line">
+            <h3>
+              { url ? (
+                <a href={url} target="_blank" rel="noopener noreferrer" title={`Visit ${name}`}>{ name }</a>
+              ) : name }
+            </h3>
+            <span class="dot">·</span>
+            <span class="position">{ position }</span>
+          </div>
+          <span class="dates">{ startDate } – { endDate }</span>
+        </div>
+        <p class="summary">{ summary }</p>
+      </div>
+    ))}
+  </div>
+</Section>
+
+<style>
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  @media print {
+    .item {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .title-line {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: color 0.15s ease;
+  }
+
+  h3:hover {
+    color: var(--text-meta);
+  }
+
+  h3 a {
+    color: inherit;
+  }
+
+  .dot {
+    font-size: 14px;
+    color: var(--text-meta);
+  }
+
+  .position {
+    font-size: 14px;
+    color: var(--text-meta);
+  }
+
+  .dates {
+    flex-shrink: 0;
+    font-size: 14px;
+    color: var(--text-meta);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .summary {
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+</style>

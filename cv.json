@@ -1,12 +1,12 @@
 {
     "basics": {
       "name": "Facundo Meoni",
-      "label": "Fullstack developer",
+      "label": "Developer",
       "image": "",
       "email": "meonifacu@gmail.com",
       "phone": "(+54) 236-4414166",
       "url": "https://facu-dev.com",
-      "summary": "+3 years of experience in web development. I'm a Fullstack developer with solid knowledge in JavaScript, HTML, CSS, TailwindCSS, React, Astro, NextJS, Redux, NodeJS, Express, Java, Spring Boot, AWS, SQL, MySQL, Sequelize, Docker, Git, GitHub, C#, and .NET. Proactive person, with a strong desire to learn and grow in the IT industry.", 
+      "summary": "23 years old, argentinian full-stack developer and technology entrepreneur, currently building digital products and managing e-commerce operations through my own agency, ElBarto. My work sits at the intersection of business strategy and software engineering.\n\nI specialize in building scalable web applications and taking full ownership of technical infrastructures. As an AI-native developer, I heavily integrate tools like Cursor and AI CLIs into my daily workflow to accelerate problem-solving, optimize data structures, and deliver faster, higher-quality results. I care deeply about performance, automation, and the details that make digital experiences feel seamless.\n\nAlong the way, I've managed end-to-end Tiendanube operations—handling everything from custom web design to targeted email marketing—engineered interactive tools for the urban culture scene, and designed robust backend architectures. My core stack includes React, Next.js, Tailwind CSS, SQL, PostgreSQL, and Supabase.",
       "location": {
         "address": "Ricardo Rojas 637",
         "postalCode": "6000",
@@ -25,20 +25,65 @@
         "url": "https://www.linkedin.com/in/facundo-meoni-fullstack/"
       }]
     },
-    "education": [{
-      "institution": "Unnoba",
-      "url": "https://unnoba.edu.ar/",
-      "area": "Bachelor's degree in systems",
-      "studyType": "Bachelor",
-      "startDate": "2021",
-      "endDate": "Abandoned",
-      "score": "x",
-      "courses": [
-        "c++",
-        "Phyton",
-        "Algorithms"
-      ]
-    }],
+    "work": [
+      {
+        "name": "Elbarto",
+        "position": "Founder",
+        "startDate": "2025",
+        "endDate": "Present",
+        "url": "",
+        "summary": "Founded an independent digital agency to provide high-performance tech solutions for modern brands. We offer a complete suite of services including custom web development, end-to-end Tiendanube maintenance, and the creation of interactive digital products and tailored applications."
+      },
+      {
+        "name": "Software studio",
+        "position": "Fullstack Developer",
+        "url": "https://www.softwarestudio.com.ar/",
+        "startDate": "2023",
+        "endDate": "2025",
+        "summary": "Tasked with developing conversion-oriented e-commerce platforms and web management systems. Led end-to-end optimization within the Tiendanube ecosystem, integrating secure payment gateways, logistics automation, and WhatsApp chatbots. Managed cloud infrastructure migrations on AWS and configured advanced analytics tools to boost SEO performance and scale client sales."
+      }
+    ],
+    "education": "I started a degree in Systems at UNNOBA (2021-2022) and continued my career as a self-taught developer. I trained through various courses focused on web development and the integration of Artificial Intelligence tools, always eager to learn and continuously learning!",
+    "stack": [
+      {
+        "category": "AI",
+        "items": [
+          { "name": "Cursor", "description": "AI-powered code editor for daily development.", "url": "https://cursor.sh/" },
+          { "name": "Claude", "description": "AI assistant used for coding and writing.", "url": "https://claude.ai/" },
+          { "name": "Claude Code", "description": "Agentic coding CLI used to build and ship projects.", "url": "https://claude.com/claude-code" },
+          { "name": "Gemini", "description": "Used for planning and structuring projects.", "url": "https://gemini.google.com/" },
+          { "name": "ChatGPT", "description": "AI chatbot for everyday problem solving.", "url": "https://chatgpt.com/" },
+          { "name": "Orca", "description": "Manages AI coding agents across isolated worktrees.", "url": "" }
+        ]
+      },
+      {
+        "category": "Development",
+        "items": [
+          { "name": "TypeScript", "description": "Primary language for type-safe development.", "url": "https://www.typescriptlang.org/" },
+          { "name": "Next.js", "description": "React framework for production web apps.", "url": "https://nextjs.org/" },
+          { "name": "Astro", "description": "Framework used for building this portfolio.", "url": "https://astro.build/" },
+          { "name": "TailwindCSS", "description": "Utility-first CSS framework for styling.", "url": "https://tailwindcss.com/" },
+          { "name": "Supabase", "description": "Backend and Postgres database as a service.", "url": "https://supabase.com/" },
+          { "name": "VS Code", "description": "Main code editor for everyday development.", "url": "https://code.visualstudio.com/" },
+          { "name": "Warp", "description": "AI-powered terminal for daily development.", "url": "https://www.warp.dev/" }
+        ]
+      },
+      {
+        "category": "Design",
+        "items": [
+          { "name": "Figma", "description": "Interface design and prototyping tool.", "url": "https://figma.com/" },
+          { "name": "Adobe Photoshop", "description": "Image editing and design tool.", "url": "https://www.adobe.com/products/photoshop.html" },
+          { "name": "Open Pencil", "description": "Sketching and prototyping tool.", "url": "" },
+          { "name": "Unpeel", "description": "Design tool used in my workflow.", "url": "" }
+        ]
+      },
+      {
+        "category": "Productivity",
+        "items": [
+          { "name": "Obsidian", "description": "Note-taking and knowledge management.", "url": "https://obsidian.md/" }
+        ]
+      }
+    ],
     "certificates": [{
       "name": "Henry's certificate",
       "date": "2023-08-05",
@@ -270,109 +315,38 @@
     }],
     "projects": [
       {
-        "name": "Ethics",
+        "name": "Celestita House ID generator",
         "isActive": true,
-        "url": "https://ethics.ar/",
-        "description": "Online store customized using Tienda Nube’s platform. I managed product uploads, basic design personalization, integrations, and assisted with configuration and setup for launch.",
-        "github": "",
-        "skills": [
-          "Tienda Nube"
-        ]
+        "url": "https://celestitahouse.ethics.ar/",
+        "description": "Personalized 'Celestita House' credential generator for Ethics.",
+        "github": "https://github.com/FacuMeoni/ethics-credential"
       },
       {
         "name": "Caggianos Carnes - Landing Page",
         "isActive": true,
         "url": "https://www.caggianocarnes.com/es",
-        "description": "Landing page for a local meat distributor, focused on showcasing brand identity, service highlights, and contact form. Built with React, Vite and TailwindCSS.",
-        "github": "https://github.com/FacuMeoni/caggiano-landing/",
-        "skills": [
-          "React",
-          "TailwindCSS",
-          "JavaScript",
-          "Landing page",
-          "Vite",
-          "Client-oriented design"
-        ]
-      }, {
-        "name": "Rick and Morty",
-        "isActive" : true,
-        "url": "https://rickandmorty-gg.vercel.app/",
-        "description": "My first full-stack project, where I developed an SQL database and an API using Express and Sequelize. On the frontend, I designed a user-friendly and intuitive interface with React.js, focusing on functionality and seamless user experience.",
-        "github": "https://github.com/FacuMeoni/rick_and_morty.git",
-        "skills": [
-          "React",
-          "JavaScript",
-          "Node.js",
-          "Express",
-          "Sequelize",
-          "PostgreSQL",
-          "CSS",
-          "HTML"
-         ]
+        "description": "Landing page for a local meat distributor.",
+        "github": "https://github.com/FacuMeoni/caggiano-landing/"
       },
       {
-        "name": "Contact Manager - Java Console App",
+        "name": "Juntadas App",
         "isActive": false,
-        "description": "A console-based CRUD application developed in Java, allowing users to create, view, update, and delete contacts. This project helped me apply object-oriented principles and data structure management.",
-        "github": "",
-        "skills": [
-          "Java",
-          "OOP",
-          "Data structures",
-          "Algorithms",
-          "Console application"
-        ]
+        "url": "https://gastos-juntada-viajes.vercel.app/",
+        "description": "PWA for managing and spliting expenses during get-together or trips.",
+        "github": "https://github.com/FacuMeoni/cv-fast"
       },
       {
-        "name": "PokeDex Java CLI",
+        "name": "CVFast",
         "isActive": false,
-        "description": "Console-based Pokedex that allows searching for Pokémon, filtering them, and viewing details. Practice with OOP, collections, and basic data handling.",
-        "github": "",
-        "skills": [
-          "Java",
-          "OOP",
-          "Collections",
-          "Data structures",
-          "Console application"
-        ]
+        "description": "Application for create CVs using optimized templates and get AI suggestions.",
+        "github": "https://github.com/FacuMeoni/cv-fast"
       },
       {
-        "name": "CV Fast (Web App)",
-        "isActive": false,
-        "description": "Web application that enables users to create their CV in less than 10 minutes using optimized templates and get AI suggestions.",
-        "github": "https://github.com/FacuMeoni/cv-fast",
-        "skills": [
-          "React",
-          "TailwindCSS",
-          "JavaScript",
-          "HTML",
-          "CSS"
-        ]
-      },
-      {
-        "name": "Task Tracker - .NET Console App",
-        "isActive": false,
-        "description": "A task management system built with C# using .NET, featuring basic task creation, updates, and filtering. It reinforced my understanding of .NET structure, LINQ, and object-oriented development.",
-        "github": "",
-        "skills": [
-          "C#",
-          ".NET",
-          "LINQ",
-          "OOP",
-          "Console application"
-        ]
-      }, {
-        "name": "AWS Project Deployment (Simulated)",
-        "isActive": false,
-        "description": "A documented simulation of deploying a basic static web app using AWS services like EC2 and S3. The project includes infrastructure planning and theoretical deployment steps as part of my AWS learning path.",
-        "github": "",
-        "skills": [
-          "AWS",
-          "EC2",
-          "S3",
-          "Cloud deployment",
-          "Infrastructure as code (theoretical)"
-        ]
+        "name": "Ethics (Via Elbarto)",
+        "isActive": true,
+        "url": "https://ethics.ar/",
+        "description": "Tiendanube management, custom web design, and email marketing"
       }
+      
     ]
   }

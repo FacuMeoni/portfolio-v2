@@ -1,0 +1,151 @@
+---
+ import Section from "@/components/Section.astro";
+
+ import { stack } from "@/cv"
+---
+
+<Section title="Stack">
+  <div class="tabs no-print" role="tablist">
+    { stack.map(({ category }, i) => (
+      <button
+        type="button"
+        role="tab"
+        class="tab"
+        data-tab={category}
+        aria-selected={i === 0 ? 'true' : 'false'}
+      >{ category }</button>
+    ))}
+  </div>
+  { stack.map(({ category, items }, i) => (
+    <div class="stack-group">
+      <h4 class="category-heading print">{ category }</h4>
+      <ul class="panel" data-panel={category} hidden={i !== 0}>
+        { items.map(({ name, description, url }) => (
+          <li>
+            { url ? (
+              <a href={url} target="_blank" rel="noopener noreferrer">{ name }</a>
+            ) : (
+              <span class="name">{ name }</span>
+            ) }
+            <span>{ description }</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</Section>
+
+<script>
+  const tabs = document.querySelectorAll<HTMLButtonElement>('.tab')
+  const panels = document.querySelectorAll<HTMLUListElement>('.panel')
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.dataset.tab
+
+      tabs.forEach(t => t.setAttribute('aria-selected', String(t === tab)))
+      panels.forEach(panel => {
+        panel.hidden = panel.dataset.panel !== target
+      })
+    })
+  })
+</script>
+
+<style>
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 16px;
+  }
+
+  .tab {
+    background: none;
+    border: none;
+    border-bottom: 1px solid transparent;
+    margin-bottom: -1px;
+    padding: 0 0 8px;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--text-meta);
+    cursor: pointer;
+    transition: color 0.15s ease;
+  }
+
+  .tab:hover {
+    color: var(--text-primary);
+  }
+
+  .tab[aria-selected="true"] {
+    color: var(--text-primary);
+    border-bottom-color: var(--text-primary);
+  }
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .panel[hidden] {
+    display: none;
+  }
+
+  .category-heading {
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  @media print {
+    .panel[hidden] {
+      display: flex !important;
+    }
+
+    .stack-group {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin-bottom: 26px;
+    }
+
+    .stack-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .category-heading {
+      margin-bottom: 10px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #000;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+  }
+
+  .panel li {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .panel a,
+  .panel .name {
+    flex-shrink: 0;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: color 0.15s ease;
+  }
+
+  .panel a:hover {
+    color: var(--text-meta);
+  }
+
+  .panel span {
+    color: var(--text-secondary);
+  }
+</style>
