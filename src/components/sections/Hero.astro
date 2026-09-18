@@ -7,11 +7,13 @@ import Github from '@/icons/Github.astro'
 import LinkedIn from '@/icons/LinkedIn.astro'
 
 
-const { name, label, location, email, phone, profiles} = basics
-const { city, country } = location 
+const { name, email, phone, profiles} = basics
 
 const SOCIAL_ICONS ={ Github, LinkedIn }
 const linkedInInfo = profiles.find(profile => profile.network === 'LinkedIn')
+const whatsappNumber = `549${phone.replace(/\D/g, '').slice(2)}`
+const whatsappMessage = "Hi Facundo! I came across your portfolio and I'd like to get in touch."
+const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
 ---
 
 
@@ -21,11 +23,13 @@ const linkedInInfo = profiles.find(profile => profile.network === 'LinkedIn')
       <h1>{ name } </h1>
     </header>
     <header class="no-print">
-      <h1>  Hi, I'm { name } 👋</h1>
+      <div class="heading">
+        <h1>{ name }</h1>
+      </div>
       <nav>
         {
           email && (
-            <a 
+            <a
             href={`mailto:${email}`}
             title={`Send an email to ${name} at ${email}`}
             target="_blank"
@@ -37,9 +41,9 @@ const linkedInInfo = profiles.find(profile => profile.network === 'LinkedIn')
         }
         {
               phone && (
-                  <a 
-                  href={`tel:${phone}`}
-                  title={`Phone call to ${name} at number ${phone}`}
+                  <a
+                  href={whatsappUrl}
+                  title={`Chat with ${name} on WhatsApp`}
                   target="_blank"
                   rel="noopener noreferrer"
                   >
@@ -50,10 +54,10 @@ const linkedInInfo = profiles.find(profile => profile.network === 'LinkedIn')
         {
             profiles && profiles.map(profile => {
               const Icon = SOCIAL_ICONS[profile.network]
-              
+
               return(
-                <a 
-                href={profile.url} 
+                <a
+                href={profile.url}
                 title={`Visit ${name} profile at ${profile.network}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -65,27 +69,17 @@ const linkedInInfo = profiles.find(profile => profile.network === 'LinkedIn')
         }
       </nav>
     </header>
-    <footer>
-      <a
-      href="https://maps.app.goo.gl/3rovhvS1wywP9kKr8"
-      title=`Explore my beautiful city ${city}`
-      target="_blank"
-      rel="noopener noreferrer"
-      class="location">
-          From { city }, { country }.
-      </a>
-      <div class="print contact">
-          <span>
-              <Mail /> { email }
-          </span>
-          <span>
-              <Phone /> { phone }
-          </span>
-          <span>
-              <LinkedIn /> { linkedInInfo?.url }
-          </span>
-      </div>
-    </footer>
+    <div class="print contact">
+        <span>
+            <Mail /> { email }
+        </span>
+        <span>
+            <Phone /> { phone }
+        </span>
+        <span>
+            <LinkedIn /> { linkedInInfo?.url }
+        </span>
+    </div>
   </div>
 </Section>
 
@@ -99,50 +93,37 @@ const linkedInInfo = profiles.find(profile => profile.network === 'LinkedIn')
   header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
-  .location {
-      display: inline-flex;
-      align-items: center;
-      color: #888;
-      gap: 4px;
-      font-size: 12px;
-      font-weight: 400;
-      letter-spacing: -0.05rem;
-      transition: all 0.3s ease;
-   }
-
-  .location:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
+  .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
   }
 
   h1 {
-  font-size: 24px;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   nav {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 8px;
+  gap: 14px;
   }
 
   nav a {
-    border-radius: 6px;
-    color: #f4f4f4;
-    transition-property: background-color, box-shadow, color;
-    transition-duration: .15s;
-    transition-timing-function: ease; 
+    display: flex;
+    color: var(--text-primary);
+    transition: color 0.15s ease;
     justify-content: center;
     align-items: center;
-    padding: 4px 8px;
   }
 
   nav a:hover {
-    color: #fff;
-    background-color: #111;
+    color: var(--text-meta);
   }
 
   .contact {
@@ -159,11 +140,5 @@ const linkedInInfo = profiles.find(profile => profile.network === 'LinkedIn')
     justify-content: start;
     gap: 5px;
     font-size: 12px;
-  }
-
-  @media print {
-    .location {
-        color: #222;
-    }
   }
 </style> 
