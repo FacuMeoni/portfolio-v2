@@ -5,7 +5,7 @@
 ---
 
 <Section title="Stack">
-  <div class="tabs" role="tablist">
+  <div class="tabs no-print" role="tablist">
     { stack.map(({ category }, i) => (
       <button
         type="button"
@@ -17,18 +17,21 @@
     ))}
   </div>
   { stack.map(({ category, items }, i) => (
-    <ul class="panel" data-panel={category} hidden={i !== 0}>
-      { items.map(({ name, description, url }) => (
-        <li>
-          { url ? (
-            <a href={url} target="_blank" rel="noopener noreferrer">{ name }</a>
-          ) : (
-            <span class="name">{ name }</span>
-          ) }
-          <span>{ description }</span>
-        </li>
-      ))}
-    </ul>
+    <div class="stack-group">
+      <h4 class="category-heading print">{ category }</h4>
+      <ul class="panel" data-panel={category} hidden={i !== 0}>
+        { items.map(({ name, description, url }) => (
+          <li>
+            { url ? (
+              <a href={url} target="_blank" rel="noopener noreferrer">{ name }</a>
+            ) : (
+              <span class="name">{ name }</span>
+            ) }
+            <span>{ description }</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   ))}
 </Section>
 
@@ -87,6 +90,39 @@
 
   .panel[hidden] {
     display: none;
+  }
+
+  .category-heading {
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  @media print {
+    .panel[hidden] {
+      display: flex !important;
+    }
+
+    .stack-group {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin-bottom: 26px;
+    }
+
+    .stack-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .category-heading {
+      margin-bottom: 10px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #000;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
   }
 
   .panel li {

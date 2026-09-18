@@ -54,6 +54,13 @@
     gap: 16px;
   }
 
+  @media print {
+    li {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  }
+
   .info {
     display: flex;
     align-items: baseline;

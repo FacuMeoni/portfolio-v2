@@ -21,4 +21,11 @@
         letter-spacing: -0.01em;
         color: var(--text-primary);
     }
+
+    @media print {
+        h2 {
+            break-after: avoid-page;
+            page-break-after: avoid;
+        }
+    }
 </style>
