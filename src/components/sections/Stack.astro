@@ -1,10 +1,18 @@
 ---
  import Section from "@/components/Section.astro";
 
- import { stack } from "@/cv"
+interface Props {
+  stack: {
+    category: string;
+    items: { name: string; description: string; url?: string }[];
+  }[];
+  title: string;
+}
+
+const { stack, title } = Astro.props
 ---
 
-<Section title="Stack">
+<Section title={title}>
   <div class="tabs no-print" role="tablist">
     { stack.map(({ category }, i) => (
       <button

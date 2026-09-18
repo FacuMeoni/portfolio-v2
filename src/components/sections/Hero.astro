@@ -1,18 +1,26 @@
 ---
-import { basics } from '@/cv'
 import Section from '@/components/Section.astro'
 import Mail from '@/icons/Mail.astro'
 import Phone from '@/icons/Phone.astro'
 import Github from '@/icons/Github.astro'
 import LinkedIn from '@/icons/LinkedIn.astro'
 
+interface Props {
+  basics: {
+    name: string;
+    email: string;
+    phone: string;
+    profiles: { network: string; username: string; url: string }[];
+  };
+  whatsappMessage: string;
+}
 
-const { name, email, phone, profiles} = basics
+const { basics, whatsappMessage } = Astro.props
+const { name, email, phone, profiles } = basics
 
 const SOCIAL_ICONS ={ Github, LinkedIn }
 const linkedInInfo = profiles.find(profile => profile.network === 'LinkedIn')
 const whatsappNumber = `549${phone.replace(/\D/g, '').slice(2)}`
-const whatsappMessage = "Hi Facundo! I came across your portfolio and I'd like to get in touch."
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
 ---
 
@@ -93,7 +101,7 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(w
   header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .heading {
@@ -141,4 +149,4 @@ const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(w
     gap: 5px;
     font-size: 12px;
   }
-</style> 
+</style>

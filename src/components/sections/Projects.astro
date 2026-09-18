@@ -1,18 +1,32 @@
 ---
  import Section from "@/components/Section.astro";
 
- import { projects } from "@/cv"
  import Github from "@/icons/Github.astro";
  import ExternalLink from "@/icons/ExternalLink.astro";
+
+interface Props {
+  projects: {
+    name: string;
+    isActive: boolean;
+    description: string;
+    url?: string;
+    github?: string;
+  }[];
+  title: string;
+  archivedLabel: string;
+}
+
+const { projects, title, archivedLabel } = Astro.props
 ---
 
-<Section title="Projects">
+<Section title={title}>
   <ul>
     { projects.map(({name, isActive, description, url, github}) => (
       <li>
         <div class="info">
           <span class="name">{ name }</span>
           <span class="description">{ description }</span>
+          { !isActive && <span class="archived">{ archivedLabel }</span> }
         </div>
         <div class="links">
           { github && (

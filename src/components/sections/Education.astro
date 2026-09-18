@@ -1,8 +1,13 @@
 ---
  import Section from "@/components/Section.astro";
 
- import { education } from '@/cv'
+interface Props {
+  education: string;
+  title: string;
+}
+
+const { education, title } = Astro.props
 ---
-<Section title="Education">
+<Section title={title}>
     <p>{ education }</p>
 </Section>

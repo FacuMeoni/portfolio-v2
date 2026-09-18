@@ -1,16 +1,18 @@
 ---
 interface Props {
 	title: string;
+	description: string;
+	lang: string;
 }
 
-const { title } = Astro.props;
+const { title, description, lang } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Portfolio of Facundo Meoni, Fullstack developer with 2 years of experience in web development. Discover my projects and technical skills" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image.webp" href="/facu-logo.webp" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
