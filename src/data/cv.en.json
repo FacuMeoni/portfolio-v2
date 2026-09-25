@@ -336,10 +336,10 @@
         "github": "https://github.com/FacuMeoni/cv-fast"
       },
       {
-        "name": "CVFast",
+        "name": "curri",
         "isActive": false,
         "description": "Application for create CVs using optimized templates and get AI suggestions.",
-        "github": "https://github.com/FacuMeoni/cv-fast"
+        "github": "https://github.com/FacuMeoni/curri"
       },
       {
         "name": "Ethics (Via Elbarto)",
